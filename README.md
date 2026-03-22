@@ -61,9 +61,9 @@ A estrutura da tabela utilizada no banco de dados é a seguinte:
 
 ```sql
 CREATE TABLE eventos (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
-    data DATE NOT NULL,
-    local VARCHAR(100) NOT NULL,
-    descricao TEXT
+    id INT AUTO_INCREMENT PRIMARY KEY, -- identificador único do evento (chave primária e auto incremento)
+    nome VARCHAR(100) NOT NULL, -- nome do evento
+    data DATE NOT NULL, -- data do evento
+    local VARCHAR(100) NOT NULL, -- local onde o evento acontece
+    descricao TEXT -- descrição do evento
 );
