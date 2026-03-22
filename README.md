@@ -1,5 +1,5 @@
 # Sistema de Gerenciamento de Eventos
-# ALUNo: Genildo da Silva Ferreira
+# ALUNO: Genildo da Silva Ferreira
 
 ## Descrição do Projeto
 
