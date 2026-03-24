@@ -138,7 +138,6 @@ O usuário inicia no menu principal, escolhe uma opção, executa a ação desej
 ```
 git clone <link-do-repositorio>
 ```
-<img width="797" height="646" alt="image" src="https://github.com/user-attachments/assets/60501bcd-c279-4079-b9a0-3cef13a561ff" />
 
 2. Abra o projeto no IntelliJ
 
