@@ -137,6 +137,7 @@ Tela Inicial
  ├── Editar Evento
  └── Remover Evento
 ```
+![Sem título](https://github.com/user-attachments/assets/013f31c2-aee5-48a1-9391-d5db89d071e4)
 
 ### Funcionamento
 
