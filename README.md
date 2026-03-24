@@ -123,6 +123,8 @@ O sistema foi pensado com as seguintes telas principais:
 
 * Tela de edição de evento
 
+ <img width="748" height="414" alt="image" src="https://github.com/user-attachments/assets/84c38cb6-4665-44cc-8b9b-b6bb11408bd5" />
+
 ---
 
 ## Estrutura do sistema (Sitemap)
