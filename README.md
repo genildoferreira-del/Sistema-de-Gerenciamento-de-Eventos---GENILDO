@@ -6,13 +6,13 @@
 
 ## Sobre o Projeto
 
-Esse projeto foi desenvolvido com a ideia de criar um sistema simples para gerenciar eventos. A proposta é permitir que o usuário consiga cadastrar, visualizar, editar e remover eventos de forma fácil.
+Esse projeto em JAVA foi desenvolvido com a ideia de criar um sistema simples para gerenciar eventos. A proposta é permitir que o usuário consiga cadastrar, visualizar, editar e remover eventos de forma fácil.
 
 Ele foi feito como atividade da disciplina, justamente para colocar em prática o que foi aprendido ao longo do semestre, principalmente:
 
 * Programação Orientada a Objetos (POO)
-* Banco de Dados
-* Organização de sistemas
+* Projeto de Banco de Dados
+* Interface Humano-Computador
 
 ---
 
