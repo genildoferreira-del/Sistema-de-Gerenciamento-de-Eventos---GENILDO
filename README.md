@@ -118,6 +118,9 @@ O sistema foi pensado com as seguintes telas principais:
  <img width="775" height="424" alt="image" src="https://github.com/user-attachments/assets/a2ef4a98-38da-4415-ae85-e9642ec46f36" />
 
 * Tela de cadastro de evento
+
+ <img width="745" height="423" alt="image" src="https://github.com/user-attachments/assets/3284b2da-0b83-442b-a241-9868c8c54cbe" />
+
 * Tela de edição de evento
 
 ---
