@@ -130,6 +130,7 @@ O sistema foi pensado com as seguintes telas principais:
 
  <img width="713" height="382" alt="image" src="https://github.com/user-attachments/assets/ee2fc17b-a593-4916-912e-6bf557c9f02b" />
 
+O design das telas segue princípios básicos de usabilidade, garantindo clareza e facilidade de uso para o usuário.
 
 ---
 
