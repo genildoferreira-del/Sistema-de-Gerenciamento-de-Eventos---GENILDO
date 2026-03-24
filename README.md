@@ -59,6 +59,7 @@ Essa classe é responsável por gerenciar os eventos no sistema.
 Os eventos são armazenados em um `ArrayList`, funcionando como uma lista em memória.
 
 A escolha do `ArrayList` foi feita por ser uma estrutura simples e suficiente para esse tipo de aplicação, permitindo manipulação fácil dos dados.
+<img width="843" height="630" alt="image" src="https://github.com/user-attachments/assets/618c168a-82a8-43f5-a16c-c29aa38fb68b" />
 
 ---
 
