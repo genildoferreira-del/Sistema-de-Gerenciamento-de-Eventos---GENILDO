@@ -136,6 +136,8 @@ Tela Inicial
  ├── Listar Eventos
  ├── Cadastrar Evento
  ├── Editar Evento
+ ├── Remover Evento
+
 
 ```
 ![Sem título](https://github.com/user-attachments/assets/e5e4d557-1c6d-4be9-b4ec-1c91012327f3)
