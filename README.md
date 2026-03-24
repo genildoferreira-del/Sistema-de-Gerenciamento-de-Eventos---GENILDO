@@ -1,69 +1,171 @@
 # Sistema de Gerenciamento de Eventos
-# ALUNO: Genildo da Silva Ferreira
 
-## Descrição do Projeto
-
-Este projeto foi desenvolvido com o objetivo de criar um sistema simples para gerenciamento de eventos. A ideia é permitir que o usuário consiga cadastrar, visualizar, atualizar e remover eventos de forma prática.
-
-Esse trabalho foi realizado como parte de uma atividade acadêmica, com o intuito de aplicar os conceitos vistos em aula, principalmente os de Programação Orientada a Objetos.
-
-### Tecnologias utilizadas
-- Java  
-- Programação Orientada a Objetos (POO)  
-- IntelliJ IDEA  
-- GitHub  
+**Aluno:** Genildo da Silva Ferreira
 
 ---
 
-## Explicação das Classes
+## Sobre o Projeto
+
+Esse projeto foi desenvolvido com a ideia de criar um sistema simples para gerenciar eventos. A proposta é permitir que o usuário consiga cadastrar, visualizar, editar e remover eventos de forma fácil.
+
+Ele foi feito como atividade da disciplina, justamente para colocar em prática o que foi aprendido ao longo do semestre, principalmente:
+
+* Programação Orientada a Objetos (POO)
+* Banco de Dados
+* Organização de sistemas
+
+---
+
+## Tecnologias utilizadas
+
+* Java
+* Conceitos de POO
+* IntelliJ IDEA
+* GitHub
+
+---
+
+## Como o sistema foi organizado
 
 ### Classe Evento
 
-A classe `Evento` representa um evento dentro do sistema.
+A classe `Evento` é basicamente o coração do sistema. É ela que representa cada evento.
 
-Ela possui os seguintes atributos:
-- id: identifica cada evento de forma única  
-- nome: nome do evento  
-- data: data em que o evento vai acontecer  
-- local: onde o evento será realizado  
-- descricao: informações sobre o evento  
+Ela guarda informações como:
 
-Basicamente, essa classe serve para armazenar os dados de cada evento.
+* id (identificador único)
+* nome
+* data
+* local
+* descrição
+
+Em resumo: essa classe serve para armazenar os dados de cada evento.
 
 ---
 
 ### Classe GerenciadorEventos
 
-Essa classe é responsável por fazer o gerenciamento dos eventos no sistema.
+Essa classe é responsável por “cuidar” dos eventos.
 
-Ela permite:
-- cadastrar eventos  
-- listar eventos  
-- buscar eventos pelo ID  
-- atualizar eventos  
-- remover eventos  
+É nela que ficam as funcionalidades principais do sistema:
 
-Os eventos são armazenados em uma lista (ArrayList), que funciona como uma memória temporária.
+* cadastrar eventos
+* listar eventos
+* buscar evento por ID
+* atualizar evento
+* remover evento
+
+Os eventos são guardados em um `ArrayList`, que funciona como uma lista em memória.
+
+Por que usei ArrayList?
+Porque é simples de usar e atende bem para esse tipo de sistema pequeno, permitindo adicionar, buscar e remover elementos com facilidade.
 
 ---
 
 ### Classe Main
 
-A classe `Main` é onde o programa começa a rodar.
+Aqui é onde tudo começa.
 
-Ela apresenta um menu no console, permitindo que o usuário escolha as opções e interaja com o sistema.
+A classe `Main` mostra um menu no console, onde o usuário escolhe o que quer fazer (cadastrar, listar, etc.).
+
+Ela faz a ligação entre o usuário e o sistema.
 
 ---
 
-## Projeto Físico do Banco de Dados
+## Banco de Dados
 
-A estrutura da tabela utilizada no banco de dados é a seguinte:
+Mesmo o sistema funcionando em memória, também foi pensado um modelo de banco de dados para armazenar os eventos.
 
 ```sql
 CREATE TABLE eventos (
-    id INT AUTO_INCREMENT PRIMARY KEY, -- identificador único do evento (chave primária e auto incremento)
-    nome VARCHAR(100) NOT NULL, -- nome do evento
-    data DATE NOT NULL, -- data do evento
-    local VARCHAR(100) NOT NULL, -- local onde o evento acontece
-    descricao TEXT -- descrição do evento
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    data DATE NOT NULL,
+    local VARCHAR(100) NOT NULL,
+    descricao TEXT,
+
+    CONSTRAINT chk_nome CHECK (CHAR_LENGTH(nome) > 3)
 );
+
+CREATE INDEX idx_nome_evento ON eventos(nome);
+```
+
+### Justificativas
+
+* `INT AUTO_INCREMENT`: gera automaticamente o ID
+* `VARCHAR(100)`: tamanho suficiente para nome e local
+* `DATE`: ideal para datas
+* `TEXT`: permite descrições maiores
+* `NOT NULL`: evita campos importantes vazios
+* `CHECK`: garante que o nome não seja muito curto
+* `INDEX`: melhora a busca por nome
+
+---
+
+## Wireframe (Protótipo das telas)
+
+O wireframe mostra como o sistema seria visualmente.
+
+Telas pensadas:
+
+* Tela inicial (menu)
+* Listagem de eventos
+* Cadastro de evento
+* Edição de evento
+
+(Aqui você pode adicionar imagem ou link do Figma/Canva)
+
+---
+
+## Estrutura do sistema (Sitemap)
+
+Basicamente o sistema funciona assim:
+
+```
+Tela Inicial
+ ├── Listar Eventos
+ ├── Cadastrar Evento
+ ├── Editar Evento
+ └── Remover Evento
+```
+
+### Como o usuário navega
+
+O usuário começa no menu principal, escolhe uma opção, executa a ação e depois volta para o menu.
+
+Simples e direto.
+
+---
+
+## Como rodar o projeto
+
+1. Clone o repositório:
+
+```
+git clone <link-do-repositorio>
+```
+
+2. Abra no IntelliJ
+
+3. Execute a classe `Main.java`
+
+---
+
+## Vídeo explicativo
+
+(Coloque aqui o link do vídeo)
+
+---
+
+## Considerações finais
+
+Esse projeto foi importante para praticar:
+
+* Organização de código
+* Uso de classes e objetos
+* Lógica de programação
+* Estruturação de um sistema simples
+
+Além disso, ajudou a entender melhor como um sistema real pode ser construído, mesmo que em versão básica.
+
+---
