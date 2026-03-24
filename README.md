@@ -15,8 +15,6 @@ Ele foi feito como atividade da disciplina, justamente para colocar em prática 
 * Organização de sistemas
 
 ---
-<img width="1365" height="223" alt="image" src="https://github.com/user-attachments/assets/170ed4e2-7be9-4947-bd1b-14bff7622746" />
-
 
 ## Tecnologias utilizadas
 
