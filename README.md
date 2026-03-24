@@ -68,6 +68,7 @@ A escolha do `ArrayList` foi feita por ser uma estrutura simples e suficiente pa
 A classe `Main` é o ponto de entrada do sistema.
 
 Ela apresenta um menu no console, permitindo que o usuário escolha as opções disponíveis e interaja com o sistema.
+<img width="863" height="666" alt="image" src="https://github.com/user-attachments/assets/30586de0-a9dd-40e3-b552-0e387eeaddcf" />
 
 ---
 
