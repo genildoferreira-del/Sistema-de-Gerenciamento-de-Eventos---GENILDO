@@ -112,6 +112,7 @@ O sistema foi pensado com as seguintes telas principais:
   
  <img width="731" height="426" alt="image" src="https://github.com/user-attachments/assets/e3a06ac6-c04f-46f3-8a12-c0a9c12638d1" />
 
+
 * Tela de listagem de eventos  
   
  <img width="775" height="424" alt="image" src="https://github.com/user-attachments/assets/a2ef4a98-38da-4415-ae85-e9642ec46f36" />
