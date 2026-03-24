@@ -45,9 +45,9 @@ Em resumo: essa classe serve para armazenar os dados de cada evento.
 
 ### Classe GerenciadorEventos
 
-Essa classe é responsável por “cuidar” dos eventos.
+Essa classe é responsável por gerenciar os eventos no sistema.
 
-É nela que ficam as funcionalidades principais do sistema:
+É nela que ficam as funcionalidades principais:
 
 * cadastrar eventos
 * listar eventos
@@ -55,28 +55,25 @@ Essa classe é responsável por “cuidar” dos eventos.
 * atualizar evento
 * remover evento
 
-Os eventos são guardados em um `ArrayList`, que funciona como uma lista em memória.
+Os eventos são armazenados em um `ArrayList`, funcionando como uma lista em memória.
 
-Por que usei ArrayList?
-Porque é simples de usar e atende bem para esse tipo de sistema pequeno, permitindo adicionar, buscar e remover elementos com facilidade.
+A escolha do `ArrayList` foi feita por ser uma estrutura simples e suficiente para esse tipo de aplicação, permitindo manipulação fácil dos dados.
 
 ---
 
 ### Classe Main
 
-Aqui é onde tudo começa.
+A classe `Main` é o ponto de entrada do sistema.
 
-A classe `Main` mostra um menu no console, onde o usuário escolhe o que quer fazer (cadastrar, listar, etc.).
-
-Ela faz a ligação entre o usuário e o sistema.
+Ela apresenta um menu no console, permitindo que o usuário escolha as opções disponíveis e interaja com o sistema.
 
 ---
 
 ## Banco de Dados
 
-Mesmo o sistema funcionando em memória, também foi pensado um modelo de banco de dados para armazenar os eventos.
+Mesmo o sistema funcionando em memória, foi definido um modelo de banco de dados para representar como os dados poderiam ser persistidos.
 
-```sql
+```sql id="r9n0yd"
 CREATE TABLE eventos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
@@ -92,34 +89,28 @@ CREATE INDEX idx_nome_evento ON eventos(nome);
 
 ### Justificativas
 
-* `INT AUTO_INCREMENT`: gera automaticamente o ID
-* `VARCHAR(100)`: tamanho suficiente para nome e local
-* `DATE`: ideal para datas
-* `TEXT`: permite descrições maiores
-* `NOT NULL`: evita campos importantes vazios
-* `CHECK`: garante que o nome não seja muito curto
-* `INDEX`: melhora a busca por nome
+* `INT AUTO_INCREMENT`: garante identificação única automática
+* `VARCHAR(100)`: tamanho adequado para nome e local
+* `DATE`: apropriado para armazenar datas
+* `TEXT`: permite descrições mais detalhadas
+* `NOT NULL`: evita dados obrigatórios vazios
+* `CHECK`: garante um tamanho mínimo para o nome
+* `INDEX`: melhora o desempenho em buscas por nome
 
 ---
 
-## Wireframe (Protótipo das telas)
+## Wireframe
 
-O wireframe mostra como o sistema seria visualmente.
-
-Telas pensadas:
+O sistema foi pensado com as seguintes telas principais:
 
 * Tela inicial (menu)
-* Listagem de eventos
-* Cadastro de evento
-* Edição de evento
-
-(Aqui você pode adicionar imagem ou link do Figma/Canva)
+* Tela de listagem de eventos
+* Tela de cadastro de evento
+* Tela de edição de evento
 
 ---
 
 ## Estrutura do sistema (Sitemap)
-
-Basicamente o sistema funciona assim:
 
 ```
 Tela Inicial
@@ -129,11 +120,9 @@ Tela Inicial
  └── Remover Evento
 ```
 
-### Como o usuário navega
+### Funcionamento
 
-O usuário começa no menu principal, escolhe uma opção, executa a ação e depois volta para o menu.
-
-Simples e direto.
+O usuário inicia no menu principal, escolhe uma opção, executa a ação desejada e retorna ao menu após a operação.
 
 ---
 
@@ -145,27 +134,14 @@ Simples e direto.
 git clone <link-do-repositorio>
 ```
 
-2. Abra no IntelliJ
+2. Abra o projeto no IntelliJ
 
 3. Execute a classe `Main.java`
 
 ---
 
-## Vídeo explicativo
-
-(Coloque aqui o link do vídeo)
-
----
-
 ## Considerações finais
 
-Esse projeto foi importante para praticar:
+Este projeto permitiu aplicar conceitos importantes de programação orientada a objetos, organização de código e modelagem de dados.
 
-* Organização de código
-* Uso de classes e objetos
-* Lógica de programação
-* Estruturação de um sistema simples
-
-Além disso, ajudou a entender melhor como um sistema real pode ser construído, mesmo que em versão básica.
-
----
+## Também ajudou a entender como estruturar um sistema completo, mesmo sendo uma versão simples, integrando lógica, estrutura e planejamento.
