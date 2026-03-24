@@ -109,7 +109,8 @@ CREATE INDEX idx_nome_evento ON eventos(nome);
 O sistema foi pensado com as seguintes telas principais:
 
 * Tela inicial
-  <img width="731" height="426" alt="image" src="https://github.com/user-attachments/assets/e3a06ac6-c04f-46f3-8a12-c0a9c12638d1" />
+  
+ <img width="731" height="426" alt="image" src="https://github.com/user-attachments/assets/e3a06ac6-c04f-46f3-8a12-c0a9c12638d1" />
 
 * Tela de listagem de eventos
 * Tela de cadastro de evento
