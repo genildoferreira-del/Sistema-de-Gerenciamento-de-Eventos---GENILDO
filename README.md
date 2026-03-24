@@ -40,6 +40,7 @@ Ela guarda informações como:
 * descrição
 
 Em resumo: essa classe serve para armazenar os dados de cada evento.
+<img width="832" height="617" alt="image" src="https://github.com/user-attachments/assets/e29422b8-be14-42f9-adb9-07049b036314" />
 
 ---
 
