@@ -106,7 +106,9 @@ CREATE INDEX idx_nome_evento ON eventos(nome);
 ---
 
 ## Wireframe
-O wireframe foi desenvolvido para representar a interface do sistema de forma simples e intuitiva. O fluxo permite que o usuário navegue entre as telas principais realizando operações de cadastro, edição, listagem e remoção de eventos. O sistema foi pensado com as seguintes telas principais:
+O wireframe foi desenvolvido para representar a interface do sistema de forma simples e intuitiva. O fluxo permite que o usuário navegue entre as telas principais realizando operações de cadastro, edição, listagem e remoção de eventos. 
+
+O sistema foi pensado com as seguintes telas principais:
 
 * Tela inicial
   
