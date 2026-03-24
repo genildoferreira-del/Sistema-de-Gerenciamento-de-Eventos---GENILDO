@@ -22,7 +22,7 @@ Ele foi feito como atividade da disciplina, justamente para colocar em prática 
 * Conceitos de POO
 * IntelliJ IDEA
 * GitHub
-* Fifma
+* Figma
 
 <img width="1365" height="414" alt="image" src="https://github.com/user-attachments/assets/67720de0-d4e4-4644-8b6d-acd79235f4a3" />
 
